@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Crud</title>
+</head>
+<body>
+    
+
+
+    <section>
+        <div class="heading">
+            <img src="images/flamingtext__26068056772646949.png" class="d-block head-img" alt="">
+            <!-- Button trigger modal -->
+            <button   type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                 Add new user <i class="fa-solid fa-user-plus"></i>
+              </button>
+        </div>
+        <div class="search-input">
+            <div class="search">
+                <input id="searchInput" type="text" placeholder="Search by name...">
+                <label for=""><i class="fa-solid fa-magnifying-glass"></i></label>
+            </div>
+        </div>
+
+        <div   class="list-users">
+            <ul id="list">
+                
+                
+                 
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- model -->
+
+ 
+        <div  class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Fill The Form</h1>
+                  <button id="modalBtn" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                   <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="Inputimg">
+                                <div class="content">
+                                    <div class="image">
+                                        <img src="images/profile.png" id="profilePhoto" class="w-100" alt="">
+                                    </div>
+                                    <div id="deletPhoto" class="choosePhoto text-center mt-3">
+                                        <label id="photoBtn" for="inputPhoto" class="defaultBtn rounded-5">Choose Photo</label>
+                                        <input class="d-none" id="inputPhoto" type="file" accept="image/jpeg, image/png, image/jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+    
+    
+                        <div class="col-12">
+                            <div class="inputs  " id="dis">
+                                <input class="input form-control " id="fname" type="text" placeholder="First name" required>
+                                <input class="input form-control"  id="lname" type="text" placeholder="Last name" >
+                                <input class="input form-control"  id="pnumber" type="tel" placeholder="Phone number" required>
+                                <input class="input form-control"  id="email" type="email" placeholder="Email address" >
+                                <input class="input form-control"  id="date" type="date">
+                            </div>
+                            <div class="add" id="delet">
+                                <button disabled   id="btn">Add contact</button>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+   
+ 
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

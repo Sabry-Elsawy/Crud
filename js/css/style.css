@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Margarine';
+}
+
+body {
+    background: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
+    background: -o-linear-gradient(left, #4facfe, #00f2fe);
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+
+
+section{
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 40px 0;
+}
+section .heading{
+    text-align: center;
+}
+section .head-img{
+    width: 150px;
+    margin:  auto;
+     
+}
+
+section .heading button{
+    background: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
+    background: -o-linear-gradient(left, #4facfe, #00f2fe);
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 40px;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+
+.search-input{
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+.search-input .search input{
+    border: none;
+    background-color: transparent;
+    -webkit-transition: ease 0.4s;
+    -o-transition: ease 0.4s;
+    transition: ease 0.4s;
+
+}
+.search-input .search input:focus{
+ 
+    outline: none;
+}
+.search-input .search{
+    background-color: #00f2fe;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+    padding: 0 15px;
+    border: 1px solid #000;
+    border-radius: 40px;
+    background-color: #fff;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.search-input .search:hover{
+    width: 80%;
+}
+
+.list-users{
+     background-color: #ccc;
+}
+.list-users ul li .content-list{
+    display: flex;
+}
+.list-users ul li .content-list .caption{
+   
+    margin: 25px;
+    height: 80px;
+}
+.list-users ul li .content-list .caption h1{
+    font-size: 25px;
+}
+.list-users ul li .content-list .caption p{
+    font-size: 18px;
+}
+.list-users ul li .content-list  img{
+    background-color: aqua;
+    width: 80px;
+    height: 80px;
+    margin: 20px 0;
+    border-radius: 50%;
+}
+.list-users ul li {
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-users ul li .icon{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.list-users ul li .icon i{
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+.list-users ul li .icon .fa-eye{
+    background-color: gray;
+}
+.list-users ul li .icon .fa-pen-to-square{
+    background-color: gold;
+}
+.list-users ul li .icon .fa-trash{
+    background-color: red;
+}
+
+.Inputimg .content .image{
+    width: 200px;
+    margin:40px auto;
+    
+}
+.Inputimg .content .image img{
+    border-radius: 50%;
+}
+.Inputimg .choosePhoto label{
+    background: -webkit-gradient(linear, left top, right top, from(#005D9A), color-stop(#4ABDAC), to(#B8E0F9));
+    background: -o-linear-gradient(left, #005D9A, #4ABDAC, #B8E0F9);
+    background: linear-gradient(to right, #005D9A, #4ABDAC, #B8E0F9);
+    border: none;
+    padding: 5px 20px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.Inputimg .choosePhoto {
+    
+    border-bottom: 1px solid gray;
+}
+
+.inputs {
+     padding: 30px 0;
+}
+
+.inputs input{
+ 
+    width: 100%;
+    line-height: 40px;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid aqua;
+    margin: 30px 0;
+}
+.inputs input:focus{
+    outline: none;
+  
+}
+
+.inputs input::placeholder{
+    font-size: 20px;
+}
+.form-control{
+    border-radius: 0;
+}
+.add{
+    text-align: center;
+    margin: 30px 0;
+}
+.add button{
+    border: none;
+    background-color: #005D9A;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+
+
+
+@media (max-width:1000px) {
+    
+section{
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+}
+
+.list-users ul li .icon{
+    font-size: 16px;
+    margin-right: 0px;
+}
+.list-users ul li .icon i{
+    padding: 8px;
+    
+}
+ 
+.list-users ul li .content-list .caption{
+   
+    margin: 25px 0 25px 10px;
+  
+}
+.list-users ul li .content-list .caption h1{
+    font-size: 20px;
+}
+.list-users ul li .content-list .caption p{
+    font-size: 16px;
+}
+}
+
